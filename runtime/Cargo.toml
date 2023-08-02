@@ -1,0 +1,13 @@
+[package]
+name = "runtime"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+readme.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "flogvm"
+path = "src/main.rs"
+
+[dependencies]
