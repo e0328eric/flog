@@ -39,9 +39,10 @@ push the added value.
 
 #### Miscellaneous
 - `A` : Assignment operator. For example, `Afoo` means that store a value at the top of the stack
-    into a variable called `foo`.
-- `?` : If statement.    <Grammar>: ?{<conditional>}{<true stmt>}{<false stmt>}
-- `L` : Loop statement.  <Grammar>: L{<conditional>}{<loop stmt>}
+    into a variable called `foo`. Here, the top element is popped.
+- `C` : Same as `A` but it does not pop the stack.
+- `?` : If statement.    `<Grammar>: ?{<conditional>}{<true stmt>}{<false stmt>}`
+- `L` : Loop statement.  `<Grammar>: L{<conditional>}{<loop stmt>}`
 
 ## Example code
 1. Hello, World

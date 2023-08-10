@@ -43,7 +43,8 @@ pub const TokenType = enum(u8) {
     rightsquare,  // ]
 
     // keywords
-    assign,       // the A character
+    assign_pop,   // the A character
+    assign,       // the C character
     exponent,     // the E character
     float_type,   // the F character
     hashmap,      // the H character
@@ -52,7 +53,7 @@ pub const TokenType = enum(u8) {
     loopforkey,   // the LK character
     loopforvalue, // the LV character
     map,          // the M character
-    print,        // the p character
+    print,        // the P character
 
     illegal = 0xFF,
 // zig fmt: on
