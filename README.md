@@ -8,16 +8,14 @@ push the added value.
 
 ### Operators
 #### Arithmetic
-- `A` : Assignment operator. For example, `fooA` means that store a value at the top of the stack
-    into a variable called `foo`.
 - `+` : Addition or string concatenation. `flog` does not allow implicit type conversion.
 - `-` : Negation and subtraction. If one write `2-2-`, then the result is `4` because `2-(-2)=4`.
 - `*` : Multiplication
 - `/` : Euclidean Division.
 - `%` : Euclidean Remainder. It is always true that `a = b * (a / b) + (a % b)` and `0 <= a % b < a`.
 - `E` : Power. For example, the expression `2 3 4EE` is equal to `2^(3^4)`.
-- `^` : Increment.
-- `_` : Decrement.
+- `U` : Increment.
+- `D` : Decrement.
 
 #### Boolean Operators
 - `!` : Boolean Not. In `flog`, everything is `true` value except `0`, `null`, `NaN`, empty
@@ -39,6 +37,12 @@ push the added value.
 - `,` : Push value into the print queue.
 - `P` : Drain the print queue. `
 
+#### Miscellaneous
+- `A` : Assignment operator. For example, `Afoo` means that store a value at the top of the stack
+    into a variable called `foo`.
+- `?` : If statement.    <Grammar>: ?{<conditional>}{<true stmt>}{<false stmt>}
+- `L` : Loop statement.  <Grammar>: L{<conditional>}{<loop stmt>}
+
 ## Example code
 1. Hello, World
 ```
@@ -47,5 +51,5 @@ push the added value.
 
 2. 99 bottles of beer
 ```
-(,,P:"{} bottles of beer {}\n";):a;99{#0>}{##"on the wall"a"\nTake one down, pass it around"a_}L
+(,,P:"{} bottles of beer {}\n";):a;99L{#0>}{##"on the wall"a"\nTake one down, pass it around"a_}
 ```
