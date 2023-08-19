@@ -52,5 +52,5 @@ push the added value.
 
 2. 99 bottles of beer
 ```
-(,,P:"{} bottles of beer {}\n";):a;99L{#0>}{##"on the wall"a"\nTake one down, pass it around"a_}
+(,,P:"{} bottles of beer {}\n";):a;99L{#0>}{##"on the wall"a"\nTake one down, pass it around"aD}
 ```
